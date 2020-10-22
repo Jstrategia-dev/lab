@@ -14,8 +14,8 @@ unsigned long lastTime = 0;
 
 
 //MQTT client("test.mosquitto.org", 1883, MQTTcallback);             // we will be using the public Mosquitto MQTT server
-// MQTT client("mqtt.eclipse.org",1883,MQTTcallback);                // we will be using the public Eclipse MQTT server
-MQTT client("207.253.185.55", 1883, MQTTcallback);                   // we will be using the public Jstrategia MQTT server
+MQTT client("mqtt.eclipse.org",1883,MQTTcallback);                // we will be using the public Eclipse MQTT server
+//MQTT client("207.253.185.55", 1883, MQTTcallback);                   // we will be using the public Jstrategia MQTT server
 void MQTTcallback(char* topic, byte* payload, unsigned int length)   // will be called if a message is posted to a MQTT topic we subscribed to
 {
    
